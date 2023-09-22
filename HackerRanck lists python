@@ -1,0 +1,28 @@
+if __name__ == '__main__':
+    N = int(input())
+    
+    listy = []
+    
+    
+    for i in range(N):
+        comand, *line = input().split()
+        
+        match comand:
+            case "insert":
+                listy.insert(int(line[0]), int(line[1]))
+            case "print":
+                print(listy)
+            case "remove":
+                listy.remove(int(line[0]))
+            case "append":
+                listy.append(int(line[0]))
+            case "sort":
+                listy.sort()
+            case "pop":
+                listy.pop()
+            case "reverse":
+                listy.reverse()
+
+
+
+
